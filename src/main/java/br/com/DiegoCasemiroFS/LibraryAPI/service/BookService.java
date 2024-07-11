@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 import br.com.DiegoCasemiroFS.LibraryAPI.entity.Book;
 
-@Service
 public interface BookService {
 
     Book save(Book book);

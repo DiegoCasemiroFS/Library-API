@@ -5,7 +5,9 @@ import br.com.DiegoCasemiroFS.LibraryAPI.entity.Loan;
 import br.com.DiegoCasemiroFS.LibraryAPI.exception.BusinessException;
 import br.com.DiegoCasemiroFS.LibraryAPI.repository.LoanRepository;
 import br.com.DiegoCasemiroFS.LibraryAPI.service.LoanService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class LoanServiceImpl implements LoanService {
 
     private LoanRepository loanRepository;
