@@ -1,17 +1,5 @@
 package br.com.DiegoCasemiroFS.LibraryAPI.controller;
 
-import java.time.LocalDate;
-
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.PatchMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.server.ResponseStatusException;
-
 import br.com.DiegoCasemiroFS.LibraryAPI.dto.LoanDto;
 import br.com.DiegoCasemiroFS.LibraryAPI.dto.ReturnedLoanDto;
 import br.com.DiegoCasemiroFS.LibraryAPI.entity.Book;
@@ -19,6 +7,11 @@ import br.com.DiegoCasemiroFS.LibraryAPI.entity.Loan;
 import br.com.DiegoCasemiroFS.LibraryAPI.service.BookService;
 import br.com.DiegoCasemiroFS.LibraryAPI.service.LoanService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
+
+import java.time.LocalDate;
 
 @RestController
 @RequiredArgsConstructor
